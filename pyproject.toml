@@ -74,8 +74,9 @@ warn_unreachable = true
 
 
 [tool.pylint]
-master.py-version = "3.7"
-master.ignore-paths= ["src/se_for_sci_hw4/_version.py"]
+py-version = "3.7"
+ignore-paths= ["src/se_for_sci_hw4/_version.py"]
+extension-pkg-allow-list = ["se_for_sci_hw4._core"]
 reports.output-format = "colorized"
 similarities.ignore-imports = "yes"
 messages_control.disable = [
@@ -83,4 +84,5 @@ messages_control.disable = [
   "fixme",
   "line-too-long",
   "wrong-import-position",
+  "missing-module-docstring",
 ]
